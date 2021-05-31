@@ -1,3 +1,59 @@
 .cover-image{
     width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/cover-image.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.cover-content{
+  position: absolute;
+  /* width: 100%; */
+  top: 8px;
+  left: 16px;
+  padding-left: 10.5%;
+  padding-top: 12%;
+}
+.cover-text{
+    font-family: 'Poppins';
+    color: white;
+    text-align: left;
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 1.3;
+    padding-left: 0px !important;
+}
+
+.cover-button{
+  margin-top: 40px;
+  padding: 10px;
+  padding-left: 70px;
+  padding-right: 70px;
+
+  font-family: 'Poppins';
+  color: white;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.cover-content > .col > .row > .col-lg-2{
+  text-align: left;
+}
+
+.cover-button:hover{
+  background-color: rgba(251, 210, 127, 0.2);
+}
+
+@media screen and (max-width: 991px) {
+  .cover-text{
+      padding-left: 4%;
+      padding-right: 4%;
+      padding-top: 80px;
+
+      font-size: 60px;
+  }
+
+  .cover-image{
+    background-size: auto;
+  }
 }
